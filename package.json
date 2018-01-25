@@ -1,0 +1,11 @@
+{
+  "name": "tinaandcarlton",
+  "version": "1.0.0",
+  "scripts": {
+    "build:root": "cd tinaandcarlton1root; npm run build",
+    "build:weddinginvite": "cd tinaandcarlton2weddinginvite; npm run build",
+    "build:all": "npm run build:root && npm run build:weddinginvite",
+    "start:caddy": "./caddy -conf Caddyfile"
+  },
+  "license": "MIT"
+}

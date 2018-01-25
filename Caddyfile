@@ -1,0 +1,14 @@
+tinaandcarltonhome.com:8080/router {
+  tls self_signed
+  root tinaandcarlton3router/build
+}
+
+tinaandcarltonhome.com:8080/weddinginvite {
+  tls self_signed
+  root tinaandcarlton2weddinginvite/build
+}
+
+tinaandcarltonhome.com:8080 {
+  tls self_signed
+  root tinaandcarlton1root/build
+}
