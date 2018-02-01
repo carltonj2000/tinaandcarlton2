@@ -1,0 +1,17 @@
+version: '2'
+services:
+  tinaandcarlton:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - tinaandcarlton2weddinginvite
+      - tinaandcarlton3wedding
+  tinaandcarlton2weddinginvite:
+    build: ./tinaandcarlton2weddinginvite
+    environment:
+      PORT: 5000
+  tinaandcarlton3wedding:
+    build: ./tinaandcarlton3wedding
+    environment:
+      PORT: 5000

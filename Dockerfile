@@ -1,5 +1,5 @@
 FROM ubuntu:17.04
-EXPOSE 80 443
+EXPOSE 8080
 
 COPY caddy /usr/bin/caddy
 
